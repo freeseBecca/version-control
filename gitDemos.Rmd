@@ -51,7 +51,7 @@ You can track pretty much anything. Let's start a new R script and push it to Gi
   
   3. In a terminal window, navigate to your repository and type `git status`. You need to tell Git to start tracking files in the **Untracked files** section. 
   
-  <img src = "images/terminal.PNG" height="800px" width="1000px" />
+  <img src = "images/terminal.PNG" height="400px" width="500px" />
   
   4. Type `git add` followed by the name of the file you want to track. Example: `git add gitDemos.Rmd`
       Once a file is being tracked, you can work on it and periodcally commit and push your work to GitHub. 
@@ -65,7 +65,7 @@ R Studio now has pretty good capabilities to work with git!
 
   1. Start a new project. I usually don't choose the Version Control option here.
   
-<img src = "images/project.PNG" height="800px" width="1000px" />
+<img src = "images/project.PNG" height="400px" width="500px" />
 
   2. In the terminal window of R Studio, type `git status`. This will tell you that this is not a git repository
 
@@ -75,8 +75,8 @@ R Studio now has pretty good capabilities to work with git!
 
 
 #In summary 
-<img src = "images/gitProcess.PNG" height="200px" width="400px" />
-<img src = "images/fire.PNG" height="200px" width="400px" />
+<img src = "images/gitProcess.png" height="200px" width="400px" />
+<img src = "images/fire.png" height="200px" width="400px" />
 
 1. Initialize or clone a repo on your local machine.
 
