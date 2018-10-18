@@ -1,5 +1,5 @@
 ---
-title: "Version Control Demos"
+title: "Version Control Demo"
 author:
 - Becca Freese
 - frees048@umn.edu
@@ -17,6 +17,7 @@ editor_options:
 # Introduction 
 Here are a few things I've learned about Git and GitHub that I find helpful in my daily workflow. I include links to websites I've used as references. You can find this file on my GitHub page linked above or by searching freeseBecca in GitHub.
 
+First, make sure you have git installed. Type `git --version` in a terminal window to see if you already have it. If not, you will need to [install git](https://git-scm.com/downloads). Mac usually come with it, but it may be an older version you might want to think about updating. 
 
 #Starting and Cloning a repository from GitHub
 Starting a new repository from GitHib is easy. Once you have it, you need to clone it to your local machine to start working with it. You could also clone an exhisting repository, say one a collaborator already has, if you start working on something already under version controls. 
@@ -75,8 +76,6 @@ R Studio now has pretty good capabilities to work with git!
 
 
 #In summary 
-<img src = "images/gitProcess.png" height="200px" width="400px" />
-<img src = "images/fire.png" height="200px" width="400px" />
 
 1. Initialize or clone a repo on your local machine.
 
@@ -90,5 +89,6 @@ R Studio now has pretty good capabilities to work with git!
 
 6. Push changes
 
-
+<img src = "images/gitProcess.png" height="200px" width="400px" />
+<img src = "images/fire.png" height="200px" width="400px" />
 
