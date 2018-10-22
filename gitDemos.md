@@ -73,6 +73,12 @@ R Studio now has pretty good capabilities to work with git!
   3. Type `git init` which initializes the project as a git repo.
 
   4. Close and reopen the project, and you should see a **Git** tab by the Environment window. 
+  
+  <img src = "images/Rgit.PNG" height="400px" width="500px" />
+
+#Working with the R Studio IDE
+Now you're using git through R Studio! I find that knowing the basics of using git through the command line and then through R Studio is sufficient for my needs, but there are other really good git clients out there if you need something further than R Studio. I recommend [Source Tree](https://www.sourcetreeapp.com/) if you want to give somethine else a try.
+
 
 
 #In summary 
