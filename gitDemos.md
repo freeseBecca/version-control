@@ -19,6 +19,10 @@ Here are a few things I've learned about Git and GitHub that I find helpful in m
 
 First, make sure you have git installed. Type `git --version` in a terminal window to see if you already have it. If not, you will need to [install git](https://git-scm.com/downloads). Mac usually come with it, but it may be an older version you might want to think about updating. 
 
+Second, get a [GitHub account](https://github.umn.edu/) if you don't already have one.
+
+Lastly, know how to find your terminal window
+
 #Starting and Cloning a repository from GitHub
 Starting a new repository from GitHib is easy. Once you have it, you need to clone it to your local machine to start working with it. You could also clone an exhisting repository, say one a collaborator already has, if you start working on something already under version controls. 
 
@@ -75,26 +79,57 @@ R Studio now has pretty good capabilities to work with git!
   4. Close and reopen the project, and you should see a **Git** tab by the Environment window. 
   
   <img src = "images/Rgit.PNG" height="400px" width="500px" />
+  
+  5. Make some change, add them, and commit them
+  
+  5.Great, but it's still not on GitHub! Go to your GitHub account and click **New repository** like before. This time, do not initialize the repo with a read me. GitHub will bring up a page like this:
+  
+  <img src = "images/newrepo.PNG" height="800px" width="1000px" />
+  
+  6. Copy the lines under "... or push an exhisting repository from the command line"
+  
+  7. In a terminal window, navigate to the repo you just made, and past the lines you copied
+  
+  `git remote add origin https://github.com/freeseBecca/newRepo.git`
+  `git push -u origin master`
 
-#Working with the R Studio IDE
+#Working with git through R Studio
 Now you're using git through R Studio! I find that knowing the basics of using git through the command line and then through R Studio is sufficient for my needs, but there are other really good git clients out there if you need something further than R Studio. I recommend [Source Tree](https://www.sourcetreeapp.com/) if you want to give somethine else a try.
 
+  1. clicking the **Diff** button under the **Git** menu will show the chanegs you've made to files and have yet to commit. 
 
+<img src = "images/diff.PNG" height="800px" width="1000px" />
+
+  2. Check the box under **Stage** to tell git what to commit. This is like using the `git add` from the command line. 
+
+  3. Write a commit message in the text box. Click **Commit**
+  
+  4. Use **Pull** and **Push** to get new changes and push your changes to GitHub.
 
 #In summary 
 
-1. Initialize or clone a repo on your local machine.
+  1. Initialize or clone a repo on your local machine.
 
-2. Work on the project
+  2. Work on the project
 
-3. Pull changes (especially when working with collaborators)
+  3. Pull changes (especially when working with collaborators)
 
-4. Add/stage your changes
+  4. Add/stage your changes
 
-5. Commit changes
+  5. Commit changes
 
-6. Push changes
+  6. Push changes
 
 <img src = "images/gitProcess.png" height="200px" width="400px" />
 <img src = "images/fire.png" height="200px" width="400px" />
+
+#Other topics of discussion if time allows
+
+  1. Git ignore
+  
+  2. Branches
+  
+  3. HTTPS vs SSH
+  
+  4. Merge conflicts
 
