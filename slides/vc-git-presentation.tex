@@ -1,0 +1,104 @@
+% % University of Minnesota Beamer Template
+%\documentclass[handout]{beamer} % Uncomment to get handouts
+\documentclass[11pt,xcolor=dvipsnames, aspectratio=169]{beamer}
+
+\usepackage{shyne}
+\usepackage{graphicx}
+\newcommand{\bc}[1]{\bt{\texttt{#1}}}
+
+% % % Fonts: Feel free to comment/uncomment as needed
+%\usepackage{newcent}
+\usepackage{palatino}
+%\usepackage[T1]{fontenc}
+%\usepackage[scaled]{helvet}
+
+\mode<presentation>{%
+
+% Define the ``official'' UMN colors
+\xdefinecolor{GopherMaroon}{HTML}{7A0019}
+\xdefinecolor{GopherGold}{HTML}{FFCC33}
+\xdefinecolor{GopherLightGold}{HTML}{FFDE7A}
+\xdefinecolor{GopherDarkMaroon}{HTML}{5B0013}
+
+\usecolortheme[named=GopherMaroon]{structure}
+%\usecolortheme[named=GopherGold]{structure}
+
+\usecolortheme{rose} % Try 'lily' if you want to get rid of block backgrounds
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{headline}{} % Uncomment to get standard 'smoothbars' headers back
+\setbeamertemplate{footline}{}
+
+\useinnertheme{rounded}
+\usefonttheme{structurebold}
+\usefonttheme[onlymath]{serif}
+
+
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[circle]
+\setbeamertemplate{note page}[plain2]
+
+\setbeamercolor{frametitle}{fg=GopherGold,bg=GopherMaroon}
+\setbeamercolor{section in head/foot}{fg=GopherMaroon,bg=GopherGold}
+
+
+% % % % Get rid of the navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% % % Draw the UMN wordmark in the lower right-hand corner
+\logo{\includegraphics[width=1.2in]{../images/maroonWM.png}}
+}
+
+
+
+\title[Short title]{Version Control Concepts (with Git)}
+\author[M. Shyne]{\Large Michael Shyne}
+\institute[Short Inst]{Biostatistical Design and Analysis Center\\University of Minnesota}
+\date{October 22, 2018}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Why use version control?}
+There are two main purposes for version control:
+\begin{itemize}
+\item To maintain an historical record of changes to code, documents or data
+\begin{itemize}
+\item To be able to easily undo changes that led to errors or other problems
+\item To be able to return to a version of particular importance (e.g published paper)
+\end{itemize}
+
+\item To manage collaboration between a team of developers
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Basic concepts of version control}
+\begin{itemize}
+\item Version control systems (like Git) maintain \bt{repositories}, stores of documents and their changes over time. Repositories can be local (located on your own computer) or remote (located at a sharable site, like GitHub).
+
+\item A version of a document is added to a repository by performing a \bt{commit}. A commit should always be accompanied by a short description of the changes made in this version of the document.
+
+\item A \bt{push} will update a remote repository with changes committed to a local repository.
+
+\item Important milestones can be marked by \bt{tag}.
+
+\item A \bt{branch}, or \bt{fork} is a copy of a repository made a particular point in time. Changes can be committed to a branch without affecting the original (\bt{trunk}).
+
+\item A branch can be reintegrated with the trunk by a \bt{merge} or \bt{pull}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Important git commands}
+\begin{itemize}
+\item \bc{git init}: Create a local repository
+\item \bc{git clone}: Create a local copy of a remote repository
+\item \bc{git add}: Stage a change, i.e. mark a file to be committed
+\item \bc{git commit}: Add all staged documents to repository
+\item \bc{git status}: Shows the status of changed files, could be untracked, modified or staged. 
+\item \bc{git push}: Updates remote repository with commits made to local repository (since last push)
+\item \bc{git pull}: Updates local repository with commits made to remote repository
+\item \bc{git merge}: Combines two branches
+\end{itemize}
+\end{frame}
+
+\end{document}
