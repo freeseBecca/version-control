@@ -4,6 +4,7 @@ author:
 - Becca Freese
 - frees048@umn.edu
 - https://github.com/freeseBecca/version-control
+
 output:
   prettydoc::html_pretty:
     theme: hpstr
