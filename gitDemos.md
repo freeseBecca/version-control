@@ -17,18 +17,17 @@ editor_options:
 # Introduction 
 Here are a few things I've learned about Git and GitHub that I find helpful in my daily workflow. I include links to websites I've used as references. You can find this file on my GitHub page linked above or by searching freeseBecca in GitHub.
 
-First, make sure you have git installed. Type `git --version` in a terminal window to see if you already have it. If not, you will need to [install git](https://git-scm.com/downloads). Mac usually come with it, but it may be an older version you might want to think about updating. 
+1. Make sure you have git installed. Type `git --version` in a terminal window to see if you already have it. If not, you will need to [install git](https://git-scm.com/downloads). Mac usually come with it, but it may be an older version you might want to think about updating. 
 
-Second, get a [GitHub account](https://github.umn.edu/) if you don't already have one.
+2. Get a [GitHub account](https://github.umn.edu/) if you don't already have one. Signing up with the UMN GitHub (github.umn.edu) account allows you to have unlimited private AND public repositories!!!!
 
-Lastly, know how to find your terminal window
 
 #Starting and Cloning a repository from GitHub
 Starting a new repository from GitHib is easy. Once you have it, you need to clone it to your local machine to start working with it. You could also clone an exhisting repository, say one a collaborator already has, if you start working on something already under version controls. 
 
   1. Log into GitHub and click **New repository**
   
-  2. Fill in the information. I usually initialize by repo with a read me. 
+  2. Fill in the information. I usually initialize my repo with a read me. 
   
   <img src = "images/newGithubRepo.PNG" height="800px" width="1000px" />
   
